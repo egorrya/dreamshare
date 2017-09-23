@@ -34,7 +34,6 @@ body {
  * Add the correct display in IE 9-.
  */
 
-footer,
 header,
 section {
   display: block;
@@ -151,21 +150,10 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-input {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-
-input { /* 1 */
-  overflow: visible;
-}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -178,26 +166,13 @@ input { /* 1 */
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
 
-[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-}
-
 /**
  * Remove the inner border and padding in Firefox.
  */
 
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
 /**
  * Restore the focus styles unset by the previous rule.
  */
-
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
 
 /**
  * Correct the padding in Firefox.
@@ -346,10 +321,9 @@ a {
 }
 .home-header {
   position: relative;
+  background-color: #000;
   text-align: center;
   padding: 20px 20px 135px;
-  background: #000 url('../img/header.jpg') no-repeat center center;
-  background-size: cover;
 }
 .home-header__brand a[href] {
   position: absolute;
@@ -404,18 +378,7 @@ a {
   width: 100%;
   height: 240px;
   border-radius: 5px;
-}
-.steps__item:nth-child(1) {
-  background: #aaa url('../img/step1.jpg') no-repeat center 80%;
-  background-size: cover;
-}
-.steps__item:nth-child(2) {
-  background: #aaa url('../img/step2.jpg') no-repeat center 80%;
-  background-size: cover;
-}
-.steps__item:nth-child(3) {
-  background: #aaa url('../img/step3.jpg') no-repeat center 50%;
-  background-size: cover;
+  background-color: #aaa;
 }
 .steps__count {
   background-color: #ff4e50;
@@ -436,7 +399,7 @@ a {
   margin-bottom: 10px;
 }
 .steps__info {
-  color: #ddd;
+  color: #eee;
 }
 .partners {
   width: auto;
@@ -485,90 +448,10 @@ a {
   border-radius: 3px;
   width: 100%;
   height: 120px;
+  background-color: #aaa;
 }
 .discover__item h2 {
   color: #fff;
-  padding: 10px;
-}
-.discover__item:nth-child(1) {
-  background: #aaa url(../img/1.jpg) no-repeat center center;
-  background-size: cover;
-}
-.discover__item:nth-child(2) {
-  background: #aaa url(../img/2.jpg) no-repeat center 40%;
-  background-size: cover;
-}
-.discover__item:nth-child(3) {
-  background: #aaa url(../img/3.jpg) no-repeat center 20%;
-  background-size: cover;
-}
-.discover__item:nth-child(4) {
-  background: #aaa url(../img/4.jpg) no-repeat center center;
-  background-size: cover;
-}
-.discover__item:nth-child(5) {
-  background: #aaa url(../img/5.jpg) no-repeat center top;
-  background-size: cover;
-}
-.discover__item:nth-child(6) {
-  background: #aaa url(../img/6.jpg) no-repeat center center;
-  background-size: cover;
-}
-.discover__item:nth-child(7) {
-  background: #aaa url(../img/7.jpg) no-repeat center center;
-  background-size: cover;
-}
-.search {
-  width: auto;
-  padding: 37.5px 20px;
-  text-align: center;
-}
-.search__header {
-  margin-bottom: 15px;
-}
-.search__paragraph {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-.search__text {
-  width: 100%;
-  padding: 11px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  border: 0.5px solid #ccc;
-  color: #ccc;
-}
-.search__text:active {
-  border: 0.5px solid #bbb;
-  color: #bbb;
-}
-.page-footer {
-  border-top: 4px solid #ff4e50;
-  text-align: center;
-  padding: 18px 0 20px;
-}
-.page-footer__brand {
-  font-size: 15.5px;
-  color: #ff4e50;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 12.5px;
-}
-.page-footer__items-header {
-  margin-bottom: 5px;
-}
-.page-footer__items {
-  margin-bottom: 12.5px;
-}
-.page-footer__item {
-  margin-right: 10px;
-}
-.page-footer__item:last-child {
-  margin-right: 0px;
-}
-.page-footer__me {
-  color: #ff4e50;
-  text-transform: uppercase;
 }
 @media (min-width: 768px){
   .container-fluid{
@@ -674,7 +557,6 @@ a {
     grid-template-rows: 1fr 1fr 1fr;
   }
   .discover__item{
-    cursor: pointer;
     height: 310px;
   }
   .discover__item:nth-child(5){
@@ -686,62 +568,6 @@ a {
     -ms-grid-column: 1;
     grid-column-start: 1;
     grid-column-end: 3;
-  }
-  .search{
-    width: 88%;
-    /* 640px / 768px */
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  .search{
-    width: 88%;
-    /* 640px / 768px */
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  .search{
-    padding: 95px 0px;
-  }
-  .search__header{
-    margin-bottom: 34px;
-  }
-  .search__paragraph{
-    margin-bottom: 37.5px;
-  }
-  .search__text{
-    width: 240px;
-    margin-right: 5px;
-    margin-left: -3px;
-    margin-bottom: 5px;
-  }
-  .search__btn{
-    cursor: pointer;
-  }
-  .page-footer{
-    padding: 37.5px 0 20px;
-  }
-  .page-footer .container-fluid{
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .page-footer__brand{
-    margin-left: -55px;
-  }
-  .page-footer__items-header{
-    margin-bottom: 15px;
-  }
-  .page-footer__item{
-    display: block;
-    text-align: left;
-    margin-left: 35%;
-    margin-bottom: 8px;
-  }
-  .page-footer__me{
-    margin-top: 20px;
-    font-size: 12px;
-    margin-right: -35px;
   }
 }
 @media (min-width: 1200px){
@@ -772,24 +598,6 @@ a {
   }
   .discover{
     width: auto;
-  }
-  .search{
-    padding: 97.5px 0px;
-  }
-  .search__text{
-    margin-bottom: 2px;
-  }
-  .page-footer__brand{
-    margin-left: -100px;
-  }
-  .page-footer__items{
-    margin-right: 157.5px;
-  }
-  .page-footer__item{
-    margin-left: 10%;
-  }
-  .page-footer__me{
-    margin-right: -100px;
   }
 }
 @media (min-width: 1200px) and (min-width: 768px){
@@ -838,15 +646,5 @@ a {
   }
   .partners__btn{
     width: 100%;
-  }
-  .search__btn{
-    width: 100%;
-    margin-bottom: 2.5px;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx){
-  .home-header{
-    background: #000 url('../img/header@2.jpg') no-repeat center center;
-    background-size: cover;
   }
 }
