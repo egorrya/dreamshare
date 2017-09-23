@@ -18,7 +18,10 @@
 	height: 240px;
 
 	border-radius: 5px;
-	background-color: #aaa;
+
+	&:nth-child(1) {background: #aaa url('../img/step1.jpg') no-repeat center 80%;background-size: cover}
+	&:nth-child(2) {background: #aaa url('../img/step2.jpg') no-repeat center 80%;background-size: cover}
+	&:nth-child(3) {background: #aaa url('../img/step3.jpg') no-repeat center 50%;background-size: cover}
 }
 
 .steps__count {
@@ -43,7 +46,7 @@
 }
 
 .steps__info {
-	color: #eee;
+	color: #ddd;
 }
 
 @media @t-width {

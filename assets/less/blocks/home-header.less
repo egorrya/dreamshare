@@ -1,9 +1,15 @@
 .home-header {
 	position: relative;
-	background-color: #000;
 	text-align: center;
 
 	padding: 20px 20px 135px;
+	background: #000 url('../img/header.jpg') no-repeat center center;
+	background-size: cover;
+
+	@media @retina {
+		background: #000 url('../img/header@2.jpg') no-repeat center center;
+		background-size: cover;
+	}
 }
 
 .home-header__brand a[href] {
