@@ -1,4 +1,4 @@
-# Проект Dreamshare
-Одностраничный англоязычный проект
+# Dreamshare
+Small landing
 
-### [Перейти](https://faynco.github.io/dreamshare/)
+### [Go to](https://egorrya.github.io/dreamshare/)
